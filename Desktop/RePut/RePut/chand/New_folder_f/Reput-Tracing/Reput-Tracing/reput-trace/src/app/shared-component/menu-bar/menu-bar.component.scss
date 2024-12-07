@@ -1,0 +1,106 @@
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 290px;
+  background: #0B203F; /* Dark navy background for the sidebar */
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  color: #FFFFFF; /* Default white text color */
+  padding: 15px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar .nav-link:hover {
+  background: #37474F; /* Darker gray hover effect for better contrast */
+  color: #E8E8E8; /* Slightly lighter text on hover */
+}
+
+.sidebar .nav-link.active {
+  background: #2f415c; /* Vibrant green for the active state */
+  color: #FFFFFF; /* Ensure active text remains white */
+  border-right: 4px solid #fff; /* Yellow border for a modern, focused look */
+  font-weight: bold;
+}
+ 
+  .toggled .sidebar {
+    margin-left: -250px;
+  }
+  .toggled .content {
+    margin-left: 0;
+  }
+  @media (max-width: 1000px) {
+    .navbar-toggler {
+      display: inline;
+    }
+    .sidebar {
+      margin-left: -290px;
+    }
+    .content {
+      margin-left: 0;
+    }
+    .toggled .sidebar {
+      margin-left: 0;
+    }
+    .toggled .content {
+      margin-left: 290px;
+    }
+    .right-div{
+      display: none;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1001px) {
+    .navbar-toggler {
+      display: none;
+    }
+  
+    .close-btn {
+      display: none; 
+    }
+    .canvas-button{
+    display: none;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+  .navbar-light .navbar-nav .nav-link label {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .logo-text {
+   color: #FFFFFF;
+    font-size: 1.1rem;
+    margin-top: 17px;
+  }
+  .nav-item{
+    padding: 10px;
+   }
+  

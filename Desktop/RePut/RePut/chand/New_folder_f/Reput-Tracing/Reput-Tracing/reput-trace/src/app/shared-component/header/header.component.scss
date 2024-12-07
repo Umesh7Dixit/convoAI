@@ -1,0 +1,37 @@
+.navbar-brand{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  color:#111407;
+
+}
+
+.navbar {
+  padding: 20px;
+  min-width: 100%;
+  align-items: start;
+  border-radius: 8px;
+
+}
+.search-container {
+  position: relative;
+  margin-right: 100px;
+  width: 100%; /* Adjust width as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Space for the icon */
+  border: 1px solid #E9E9E7;
+  border-radius: 50px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  color: #aaa; 
+  width: 16px; 
+  height: 16px; 
+}

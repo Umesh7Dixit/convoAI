@@ -1,0 +1,145 @@
+<!-- SideBar -->
+<nav class="navbar navbar-light bg-light ms-2">
+    <button class="navbar-toggler mt-4" type="button" id="sidebarToggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="sidebar" style="overflow-y: auto;">
+    <span class="close-btn" id="closeSidebar">&times;</span>
+
+    <div class="logo-container mt-4">
+        <svg width="38" height="42" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35.8874 40.1885L21.2029 27.4438C20.7863 27.0415 20.0918 27.3384 20.0918 27.9131V40.6579C20.0918 41.0219 20.384 41.3141 20.748 41.3141H35.4324C36.0216 41.3141 36.3089 40.5956 35.8874 40.1885Z" fill="white"/>
+            <path d="M26.299 29.9199L26.1074 29.7188V29.7379L26.299 29.9199Z" fill="#78826B"/>
+            <path d="M37.0562 21.6341V16.2268C37.0562 14.3541 36.0552 12.6251 34.4363 11.6864L14.742 0.320982C13.9901 -0.114859 13.0657 -0.10528 12.3234 0.34014L3.62092 5.56544C1.95897 6.56165 0.943604 8.3577 0.943604 10.2974V37.5064C0.943604 39.6089 2.64865 41.3188 4.75602 41.3188H13.5303V12.2563L24.2396 18.4395C25.3986 19.11 26.1074 20.3409 26.1074 21.6772V29.7139L35.7582 23.9187C36.5628 23.4349 37.0514 22.568 37.0514 21.6341H37.0562Z" fill="#788C31"/>
+            </svg>
+            
+        <p class="logo-text">Reput.com</p>
+    </div>
+    <ul class="nav flex-column mt-4">
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-dashboard" routerLinkActive="active" >
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 21C4.45 21 3.979 20.8043 3.587 20.413C3.19567 20.021 3 19.55 3 19V5C3 4.45 3.19567 3.979 3.587 3.587C3.979 3.19567 4.45 3 5 3H19C19.55 3 20.021 3.19567 20.413 3.587C20.8043 3.979 21 4.45 21 5V19C21 19.55 20.8043 20.021 20.413 20.413C20.021 20.8043 19.55 21 19 21H5ZM5 19H11V5H5V19ZM13 19H19V12H13V19ZM13 10H19V5H13V10Z"
+                            fill="#B9BBB4" />
+                    </svg>
+                </span>
+                Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a 
+                class="nav-link side-bar-text" 
+                aria-current="page" 
+                routerLink="brand-map" 
+                routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 10V2C18 0.9 17.1 0 16 0H2C0.9 0 0 0.9 0 2V10C0 11.1 0.9 12 2 12H16C17.1 12 18 11.1 18 10ZM16 10H2V2H16V10ZM9 3C7.34 3 6 4.34 6 6C6 7.66 7.34 9 9 9C10.66 9 12 7.66 12 6C12 4.34 10.66 3 9 3ZM22 3V14C22 15.1 21.1 16 20 16H3V14H20V3H22Z"
+                            fill="#B9BBB4" />
+                    </svg>
+                </span>
+                Maps
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z"
+                            fill="#B9BBB4" />
+                        <path d="M9 12H7V17H9V12Z" fill="#B9BBB4" />
+                        <path d="M17 7H15V17H17V7Z" fill="#B9BBB4" />
+                        <path d="M13 14H11V17H13V14Z" fill="#B9BBB4" />
+                        <path d="M13 10H11V12H13V10Z" fill="#B9BBB4" />
+                    </svg>
+                </span>
+                Reports            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-form" routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 19H17V4H7V19ZM9 6H15V17H9V6Z" fill="#B9BBB4" />
+                        <path d="M5 6H3V17H5V6Z" fill="#B9BBB4" />
+                        <path d="M21 6H19V17H21V6Z" fill="#B9BBB4" />
+                    </svg>
+                </span>
+                Task manager            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-supplier" routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2246_4145)">
+                        <path d="M17.3333 15.4402C16.6578 15.4402 16.0533 15.7052 15.5911 16.1205L9.25333 12.4538C9.29778 12.2506 9.33333 12.0474 9.33333 11.8353C9.33333 11.6233 9.29778 11.4201 9.25333 11.2169L15.52 7.58554C16 8.02731 16.6311 8.3012 17.3333 8.3012C18.8089 8.3012 20 7.11727 20 5.6506C20 4.18394 18.8089 3 17.3333 3C15.8578 3 14.6667 4.18394 14.6667 5.6506C14.6667 5.86265 14.7022 6.06586 14.7467 6.26908L8.48 9.9004C8 9.45863 7.36889 9.18474 6.66667 9.18474C5.19111 9.18474 4 10.3687 4 11.8353C4 13.302 5.19111 14.4859 6.66667 14.4859C7.36889 14.4859 8 14.212 8.48 13.7703L14.8089 17.4458C14.7644 17.6313 14.7378 17.8257 14.7378 18.0201C14.7378 19.4426 15.9022 20.6 17.3333 20.6C18.7644 20.6 19.9289 19.4426 19.9289 18.0201C19.9289 16.5976 18.7644 15.4402 17.3333 15.4402Z" fill="#B9BBB4"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2246_4145">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </span>
+                Supplier network            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-product" routerLinkActive="active" >
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19.425V12.575L5 9.1V15.95L11 19.425ZM13 19.425L19 15.95V9.1L13 12.575V19.425ZM11 21.725L4 17.7C3.68333 17.5167 3.4375 17.275 3.2625 16.975C3.0875 16.675 3 16.3417 3 15.975V8.025C3 7.65833 3.0875 7.325 3.2625 7.025C3.4375 6.725 3.68333 6.48333 4 6.3L11 2.275C11.3167 2.09167 11.65 2 12 2C12.35 2 12.6833 2.09167 13 2.275L20 6.3C20.3167 6.48333 20.5625 6.725 20.7375 7.025C20.9125 7.325 21 7.65833 21 8.025V15.975C21 16.3417 20.9125 16.675 20.7375 16.975C20.5625 17.275 20.3167 17.5167 20 17.7L13 21.725C12.6833 21.9083 12.35 22 12 22C11.65 22 11.3167 21.9083 11 21.725ZM16 8.525L17.925 7.425L12 4L10.05 5.125L16 8.525ZM12 10.85L13.95 9.725L8.025 6.3L6.075 7.425L12 10.85Z" fill="#B9BBB4"/>
+                        </svg>
+                </span>
+                Products
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-document" routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="#B9BBB4"/>
+                        <path d="M14 17H7V15H14V17ZM17 13H7V11H17V13ZM17 9H7V7H17V9Z" fill="#B9BBB4"/>
+                        </svg>
+                </span>
+                Documents
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" routerLink="brand-po" routerLinkActive="active">
+                <span class="me-2">
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14H11V16H4V14ZM4 10H14V12H4V10ZM4 6H14V8H4V6ZM16 2H11.82C11.4 0.84 10.3 0 9 0C7.7 0 6.6 0.84 6.18 2H2C1.86 2 1.73 2.01 1.6 2.04C1.21 2.12 0.86 2.32 0.59 2.59C0.41 2.77 0.26 2.99 0.16 3.23C0.0600001 3.46 0 3.72 0 4V18C0 18.27 0.0600001 18.54 0.16 18.78C0.26 19.02 0.41 19.23 0.59 19.42C0.86 19.69 1.21 19.89 1.6 19.97C1.73 19.99 1.86 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM9 1.75C9.41 1.75 9.75 2.09 9.75 2.5C9.75 2.91 9.41 3.25 9 3.25C8.59 3.25 8.25 2.91 8.25 2.5C8.25 2.09 8.59 1.75 9 1.75ZM16 18H2V4H16V18Z" fill="#B9BBB4"/>
+                        </svg>
+                </span>
+                PO overview            </a>
+        </li>
+
+
+        <li  class="nav-item mt-5">
+            <a class="nav-link side-bar-text" aria-current="page" href="javascript:void(0)" (click)="logout()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2246_4827)">
+                    <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="#B9BBB4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2246_4827">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                Sign out
+            </a>
+        </li>
+    </ul>
+   
+</div>
+<!-- End of SideBar -->

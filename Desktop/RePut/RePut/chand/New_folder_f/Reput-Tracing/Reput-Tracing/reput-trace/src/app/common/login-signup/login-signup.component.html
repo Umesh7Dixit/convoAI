@@ -1,0 +1,467 @@
+
+
+    <!-- Register container -->
+    <div class="registercontainer" [hidden]="!screen.isLogin && !screen.isRegister && !screen.isForgotPassword">
+        <div class="left-section">
+            <h1>Optimise value chain for profits and sustainability</h1>
+            <svg width="189" height="8" viewBox="0 0 189 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="189" height="8" rx="4" fill="#E2E690"/>
+                </svg>
+            <p>Digitize, trace, measure, manage material and byproducts for circular economy.</p>
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="72" height="72" rx="5.6682" fill="#FEFEFD"/>
+                    <g clip-path="url(#clip0_1919_13487)">
+                    <path d="M45.1757 39.7926L37.1974 32.8679C36.9713 32.6495 36.5945 32.8094 36.5945 33.1232V40.0479C36.5945 40.2448 36.7544 40.4032 36.9498 40.4032H44.9281C45.248 40.4032 45.4049 40.0141 45.1757 39.791V39.7926Z" fill="#0B203F"/>
+                    <path d="M39.9645 34.2137L39.863 34.1045V34.1153L39.9645 34.2137Z" fill="#78826B"/>
+                    <path d="M45.8094 29.713V26.7752C45.8094 25.7569 45.2665 24.8171 44.3851 24.308L33.6874 18.1339C33.2798 17.8986 32.7753 17.9032 32.3723 18.1447L27.6456 20.9841C26.7427 21.5255 26.1921 22.5007 26.1921 23.5543V38.3358C26.1921 39.4786 27.1196 40.4061 28.2624 40.4061H33.0275V24.6187L38.8463 27.978C39.4754 28.341 39.863 29.0116 39.863 29.7376V34.1028L45.1065 30.9527C45.5418 30.6912 45.8094 30.219 45.8094 29.7115V29.713Z" fill="#78826B"/>
+                    <path d="M20.9517 53.8648L18.7644 50.5978H17.0002V53.8648H14.7545V43.6577H19.4212C20.6363 43.6577 21.5823 43.9546 22.2575 44.5468C22.9328 45.1405 23.2712 45.9665 23.2712 47.0262V47.0555C23.2712 47.8814 23.0697 48.5551 22.6667 49.075C22.2637 49.5949 21.7361 49.9764 21.0839 50.2194L23.5772 53.8648H20.9532H20.9517ZM20.9963 47.1431C20.9963 46.6571 20.8409 46.2925 20.5302 46.0495C20.2195 45.8065 19.7873 45.685 19.232 45.685H17.0017V48.6167H19.2766C19.8304 48.6167 20.2564 48.4859 20.5533 48.2229C20.8501 47.9599 20.9978 47.6107 20.9978 47.1723V47.1431H20.9963Z" fill="#0B203F"/>
+                    <path d="M32.3477 50.4533C32.3431 50.5317 32.3354 50.624 32.3261 50.7301H26.8873C26.9934 51.2362 27.2149 51.6176 27.5502 51.8745C27.8855 52.1329 28.3008 52.2606 28.7961 52.2606C29.1653 52.2606 29.496 52.1975 29.7882 52.0714C30.0805 51.9453 30.3819 51.7407 30.6926 51.4592L31.9616 52.582C31.5925 53.0389 31.1449 53.3957 30.6203 53.6541C30.0958 53.911 29.4775 54.0402 28.7684 54.0402C28.1855 54.0402 27.6425 53.9433 27.1426 53.7479C26.6412 53.5541 26.209 53.2757 25.8444 52.9174C25.4799 52.5574 25.1954 52.1329 24.9908 51.6407C24.7862 51.15 24.6847 50.6025 24.6847 49.9995V49.9703C24.6847 49.4166 24.7801 48.8905 24.9692 48.3952C25.1584 47.9 25.423 47.4677 25.7645 47.0971C26.1044 46.7279 26.5105 46.4357 26.9827 46.2219C27.4533 46.0081 27.9763 45.9004 28.55 45.9004C29.2007 45.9004 29.7651 46.0173 30.242 46.2511C30.7188 46.4849 31.1141 46.7987 31.4309 47.1909C31.7463 47.5846 31.9801 48.0369 32.1308 48.5475C32.2815 49.0582 32.3569 49.5904 32.3569 50.1441V50.1733C32.3569 50.281 32.3554 50.3733 32.3492 50.4502L32.3477 50.4533ZM29.6713 48.1415C29.3898 47.8354 29.0145 47.6815 28.5485 47.6815C28.0824 47.6815 27.7056 47.8323 27.418 48.1338C27.1303 48.4352 26.9442 48.8382 26.8565 49.3443H30.1958C30.1281 48.849 29.9528 48.4475 29.6713 48.1415Z" fill="#0B203F"/>
+                    <path d="M41.9933 48.7766C41.7795 49.2241 41.4857 49.5979 41.1104 49.8994C40.7367 50.2009 40.2983 50.427 39.7984 50.5777C39.2985 50.7284 38.7602 50.8038 38.1864 50.8038H36.4807V53.8662H34.235V43.6592H38.4049C39.017 43.6592 39.5646 43.7438 40.0461 43.9145C40.5275 44.0852 40.9351 44.3252 41.2704 44.6359C41.6057 44.9466 41.8641 45.3188 42.0441 45.751C42.2241 46.1833 42.3133 46.6616 42.3133 47.1877V47.2169C42.3133 47.8106 42.2056 48.3305 41.9918 48.7766H41.9933ZM40.0399 47.2307C40.0399 46.7247 39.8769 46.3417 39.5508 46.0787C39.2247 45.8156 38.7802 45.6849 38.2172 45.6849H36.4822V48.8058H38.2618C38.8248 48.8058 39.2631 48.6581 39.5738 48.3613C39.8845 48.0644 40.0399 47.6983 40.0399 47.26V47.2307Z" fill="#0B203F"/>
+                    <path d="M48.6288 53.8646V52.7479C48.5027 52.914 48.3643 53.074 48.2136 53.2247C48.0628 53.377 47.8952 53.5108 47.7106 53.6292C47.526 53.7461 47.3214 53.84 47.0984 53.9076C46.8754 53.9753 46.6216 54.0107 46.3401 54.0107C45.4941 54.0107 44.8404 53.7538 44.379 53.2386C43.9175 52.7233 43.6868 52.0142 43.6868 51.1098V46.0493H45.9033V50.3992C45.9033 50.9221 46.0202 51.319 46.254 51.5851C46.4878 51.8512 46.8169 51.985 47.2461 51.985C47.6752 51.985 48.0121 51.8512 48.2597 51.5851C48.5073 51.319 48.6319 50.9237 48.6319 50.3992V46.0493H50.8484V53.8646H48.6319H48.6288Z" fill="#0B203F"/>
+                    <path d="M53.1924 46.0498V44.0518H55.4089V46.0498H57.2454V47.9448H55.4089V51.2841C55.4089 51.7901 55.6473 52.0424 56.1241 52.0424C56.5133 52.0424 56.8778 51.9501 57.2177 51.7655V53.5451C56.9839 53.682 56.7271 53.7912 56.4441 53.8727C56.1626 53.9558 55.8365 53.9973 55.4673 53.9973C55.1274 53.9973 54.8183 53.9604 54.5414 53.8881C54.2645 53.8158 54.0261 53.6866 53.8262 53.5021C53.6262 53.3175 53.4708 53.0775 53.3601 52.7807C53.2478 52.4838 53.1924 52.107 53.1924 51.6501V46.0513V46.0498Z" fill="#0B203F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1919_13487">
+                    <rect width="42.4909" height="36.08" fill="white" transform="translate(14.7545 17.96)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                <h2>Create a better world</h2>
+                <p>Re-invent waste with us</p>
+                <div style="text-align: left;" [hidden]="!screen.isLogin">
+                    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+                        <!-- Email input -->
+                        <input type="email" formControlName="email" placeholder="Enter email ID*" required/>
+                        
+                        <div *ngIf="(loginForm.get('email')?.touched || loginForm.get('email')?.dirty) && loginForm.get('email')?.invalid">
+                            <small *ngIf="loginForm.get('email')?.hasError('required')" class="error-class">Email is required.</small>
+                            <small *ngIf="loginForm.get('email')?.hasError('email')" class="error-class">Enter a valid email address.</small>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="password-wrapper">
+                        <input type="password" formControlName="password" placeholder="Password" #loginPasswordInput />
+                        <span
+                          class="eye-icon"
+                          [ngClass]="isPasswordVisible['loginPassword'] ? 'unlock' : 'lock'"
+                          (click)="togglePasswordVisibility('loginPassword', loginPasswordInput)"
+                        ></span>
+                        </div>
+                        <div>
+                            <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                                <small *ngIf="loginForm.get('password')?.hasError('required')" class="error-class">Password is required.</small>
+                            <small *ngIf="loginForm.get('password')?.hasError('minlength')" class="error-class">
+                              Password must be at least 8 characters long.
+                            </small>
+                            </div>                            
+                            <small *ngIf="loginForm.errors?.['weakPassword'] && loginForm.get('password')?.dirty" class="error-class">
+                                Password must contain at least one uppercase letter, one number, and one special character.
+                            </small>
+                          </div>
+
+                          <div *ngIf="errorMessage" class="error-class">{{errorMessage}}</div>
+                          
+                          
+                      
+                        <!-- Forgot password link -->
+                        <a href="javascript:void(0)" (click)="activatescreen('isForgotPassword')">Forgot Password?</a>
+                      
+                        <!-- Submit button -->
+                        <button type="submit">Submit</button>
+                      
+                        <!-- Register link -->
+                        <p class="login">Don't have an account? <a href="javascript:void(0)" (click)="activatescreen('isRegister')">Register</a></p>
+                      </form>
+                </div>
+
+                <!-- Forgot Password Section -->
+                <div  [hidden]="!screen.isForgotPassword" >
+                    <form>
+                        <input type="email"  placeholder="Enter email ID*" (input)="updateEmail($event)" required >
+                        <p class="error-class" *ngIf="errorMessage">{{errorMessage}}</p>
+                        <p *ngIf="forgotPwdSubmitted == false" class="error-class">
+                          Email is required.
+                      </p>
+                        <button type="button" (click)="onForgotPasswordSubmit()">Send Reset Link</button>
+                        <p *ngIf="forgotPwdSubmitted" class="success-message">
+                            A reset password link has been sent to your email.
+                        </p>
+                        
+                        <p class="login">Remember your password? <a href="javascript:void(0)" (click)="activatescreen('isLogin')">Login</a></p>
+                    </form>
+                </div>
+
+                <!-- Register Section -->
+                <div [hidden]="!screen.isRegister">
+                    <form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()" >
+                        <!-- register email -->
+                        <div >
+                          <input id="email" formControlName="email" type="email" placeholder="Enter email ID*" />
+                          <div *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.touched || registerForm.get('email')?.dirty)" class="error-class">
+                            <!-- Required Field Error -->
+                            <span *ngIf="registerForm.get('email')?.errors?.['required']" class="error-class">Email is required.</span>
+                        
+                            <!-- Invalid Email Error -->
+                            <span *ngIf="registerForm.get('email')?.errors?.['invalidEmail']" class="error-class">
+                              Email must contain "&#64;" and end with .com, .in, .org, .gov.in, or .co.in.
+                            </span>
+                          </div>
+                        </div>
+                    
+                        <!-- Password -->
+                          <div class="password-wrapper">
+                            <input type="password" id="password" formControlName="password" placeholder="Create new password" #registerPasswordInput />
+                            <span
+                                class="eye-icon"
+                                [ngClass]="isPasswordVisible['registerPassword'] ? 'unlock' : 'lock'"
+                                (click)="togglePasswordVisibility('registerPassword', registerPasswordInput)"
+                            ></span>
+                          </div>
+                          <div class="error-class">
+                            <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+                                <small *ngIf="registerForm.get('password')?.hasError('required')" class="error-class">Password is required.</small>
+                                <small *ngIf="registerForm.get('password')?.hasError('minlength')" class="error-class">Password must be at least 8 characters long.</small>
+                            </div>
+                            <small *ngIf="registerForm.errors?.['weakPassword'] && registerForm.get('password')?.dirty" class="error-class">Password must contain at least one uppercase letter, one number, and one special character.</small>
+                          </div>
+
+                          <!-- Confirm Password -->
+                          <div class="password-wrapper">
+                            <input type="password" id="confirmPassword" formControlName="confirmPassword" placeholder="Re-enter password" #confirmPasswordInput />
+                            <span
+                                class="eye-icon"
+                                [ngClass]="isPasswordVisible['confirmPassword'] ? 'unlock' : 'lock'"
+                                (click)="togglePasswordVisibility('confirmPassword', confirmPasswordInput)"
+                            ></span>
+                          </div>
+                          <div *ngIf="registerForm.get('confirmPassword')?.invalid && (registerForm.get('confirmPassword')?.touched || registerForm.get('confirmPassword')?.dirty)" class="error-class">
+                            <span *ngIf="registerForm.get('confirmPassword')?.errors?.['required']" class="error-class">Confirm password is required</span>
+                          </div>
+                          <div class="error-class" *ngIf="registerForm.errors?.['passwordMismatch'] && (registerForm.get('confirmPassword')?.dirty || registerForm.get('password')?.dirty)">
+                            <span class="error-class">Passwords do not match</span>
+                          </div>
+                          <div class="success-message" *ngIf="(!registerForm.get('confirmPassword')?.errors?.['required'] 
+                                && !registerForm.errors?.['passwordMismatch'] 
+                                && registerForm.get('confirmPassword')?.dirty) && !errorMessage">
+                            <span>Passwords matched</span>
+                          </div>
+
+                        <div *ngIf="errorMessage" class="error-class">{{errorMessage}}</div>
+                        <button type="submit" >Register</button>
+                        <p class="agreement">By clicking on sign up, you agree to the <a href="javascript:void(0)">Privacy Policy.</a></p>
+                        <p class="login">Have an account already? <a href="javascript:void(0)" (click)="activatescreen('isLogin')">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onboarding basic details -->
+    <div class="regbasiccontainer" [hidden]="!screen.basicDetails">
+    <div class="p-5 d-flex" style="width: 100%;">
+        <div class="left-panel">
+        </div>
+        <div class="right-panel">
+            <div style="color: #686D5D; font-size: 20px; font-weight: 400; margin-bottom: 10px;">User Details</div>
+            <form [formGroup]="userDetailsForm">
+            <div class="form-group d-flex" style="gap: 20px;">
+                <input type="text" id="first-name" placeholder="First name*" style="width:39%;" required formControlName="firstName">
+                <div *ngIf="hasError('firstName', 'required')" class="error-message">
+                    Please enter your first name
+                </div>
+                <input type="text" id="last-name" placeholder="Last name*" style="width: 38%;" required formControlName="lastName">
+                <div *ngIf="hasError('lastName', 'required')" class="error-message">
+                    Please enter your last name
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone number*" required formControlName="phoneNumber">
+                <div *ngIf="hasError('phoneNumber', 'required')" class="error-message">
+                    Please enter your phone number
+                  </div>
+                  <div *ngIf="hasError('phoneNumber', 'pattern')" class="error-message">
+                    Phone number must be 10 digits
+                  </div> 
+            </div>
+            <div class="form-group">
+              <select id="user-type" formControlName="userType" (change)="onUserRoleChange($event)">
+                <option value="">Select User Type</option>
+                <option value="Brand">Brand</option>
+                <option value="Supplier">Supplier</option>
+              </select>
+              <div *ngIf="hasError('userType', 'required')" class="error-message">Please select a user type</div>
+            </div>
+        
+            <!-- User Role Dropdown -->
+            <div class="form-group">
+              <select id="user-role" formControlName="userRole">
+                <option value="">Select User Role</option>
+                <option value="Admin">Admin</option>
+                <option value="Other">Other</option>
+              </select>
+              <div *ngIf="hasError('userRole', 'required')" class="error-message">Please select a user role</div>
+            </div>
+
+            <div style="color: #686D5D; font-size: 20px; font-weight: 400; margin-bottom: 10px;">Company Details</div>
+            <div class="form-group">
+                <select id="industry" style="background-color: white;" formControlName="industry">
+                    <option value="">Select industry</option>
+                    <option value="IT">IT</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Education">Education</option>
+                    <option value="Retail">Retail</option>
+                </select>
+                <div *ngIf="hasError('industry', 'required')" class="error-message">Please select an industry</div>
+            </div>
+            <div *ngIf="!isRoleSelected" class="form-group">
+              <input type="text" placeholder="Enter Company ID" formControlName="companyID" />
+              <div *ngIf="hasError('companyID', 'required')" class="error-message">Please enter the company ID</div>
+            </div>
+            
+            <div *ngIf="isBrandRole" class="form-group">
+              <input type="text" placeholder="Enter Brand ID" formControlName="companyID" />
+              <div *ngIf="hasError('companyID', 'required')" class="error-message">Please enter the Brand ID</div>
+            </div>
+            
+            <div *ngIf="isBrandRole" class="form-group">
+              <input type="text" placeholder="Enter Parent Company ID" formControlName="parentCompanyID" />
+              <div *ngIf="hasError('parentCompanyID', 'required')" class="error-message">Please enter the Parent Company ID</div>
+            </div>
+            
+            <div *ngIf="isSupplierRole" class="form-group">
+              <input type="text" placeholder="Enter Supplier ID" formControlName="companyID" />
+              <div *ngIf="hasError('companyID', 'required')" class="error-message">Please enter the Supplier ID</div>
+            </div>
+            
+            <div *ngIf="isSupplierRole" class="form-group">
+              <select id="tier-level" formControlName="tierLevel" (change)="onTierLevelChange($event)">
+                <option value="">Select Tier Level</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div *ngIf="hasError('tierLevel', 'required')" class="error-message">Please select the Tier Level</div>
+            </div>
+            
+            <div *ngIf="isSupplierRole && isTier1" class="form-group">
+              <input type="text" placeholder="Enter Product ID" formControlName="productID" />
+              <div *ngIf="hasError('productID', 'required')" class="error-message">Please enter the Product ID</div>
+            </div>
+            
+            <div *ngIf="isSupplierRole && isTier2OrBelow" class="form-group">
+              <input type="text" placeholder="Enter Parent Supplier ID" formControlName="parentSupplierID" />
+              <div *ngIf="hasError('parentSupplierID', 'required')" class="error-message">Please enter the Parent Supplier ID</div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="company-name"  placeholder="Name of the company" formControlName="companyName">
+              <div *ngIf="hasError('companyName', 'required')" class="error-message">Please enter the company name</div>
+            </div>
+            <div class="form-group">
+                <input type="text" id="gst" placeholder="GST number*" required formControlName="gstNumber">
+                <div *ngIf="hasError('gstNumber', 'required')" class="error-message">Please enter the GST number</div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="address" placeholder="Address" formControlName="address">
+                <div *ngIf="hasError('address', 'required')" class="error-message">Please enter the address</div>
+            </div>
+            <div style="color: #686D5D; font-size: 20px; font-weight: 400; margin-bottom: 10px;">Company Size</div>
+            <div class="company-size mb-4">
+                <button class="size-option" data-group="company-size" (click)="selectOption('companySize', '1-10 employees')" [ngClass]="{ active: userDetailsForm.get('companySize')?.value === '1-10 employees' }">1-10 employees</button>
+                <button class="size-option" data-group="company-size" (click)="selectOption('companySize', '10-100 employees')" [ngClass]="{ active: userDetailsForm.get('companySize')?.value === '10-100 employees' }">10-100 employees</button>
+                <button class="size-option" data-group="company-size" (click)="selectOption('companySize', '100-500 employees')" [ngClass]="{ active: userDetailsForm.get('companySize')?.value === '100-500 employees' }">100-500 employees</button>
+                <button class="size-option" data-group="company-size" (click)="selectOption('companySize', '500-1000 employees')" [ngClass]="{ active: userDetailsForm.get('companySize')?.value === '500-1000 employees' }">500-1000 employees</button>
+                <button class="size-option" data-group="company-size" (click)="selectOption('companySize', '>1000 employees')" [ngClass]="{ active: userDetailsForm.get('companySize')?.value === '>1000 employees' }">>1000 employees</button>
+            <div *ngIf="hasError('companySize', 'required')" class="error-message">Please select the company size</div>
+            </div>
+            <div style="color: #686D5D; font-size: 20px; font-weight: 400; margin-bottom: 10px;">Company Type</div>
+            <div class="company-s">
+                <button class="size-option" data-group="company-type" (click)="selectOption('companyType', 'SME listed')" [ngClass]="{ active: userDetailsForm.get('companyType')?.value === 'SME listed' }">SME listed</button>
+                <button class="size-option" data-group="company-type" (click)="selectOption('companyType', 'Public listed')" [ngClass]="{ active: userDetailsForm.get('companyType')?.value === 'Public listed' }">Public listed</button>
+                <button class="size-option" data-group="company-type" (click)="selectOption('companyType', 'Family business')" [ngClass]="{ active: userDetailsForm.get('companyType')?.value === 'Family business' }">Family business</button>
+            <div *ngIf="hasError('companyType', 'required')" class="error-message">Please select the company type</div>
+            </div>
+            <div style="display: flex;justify-content: flex-end; margin-top: 60px;">
+              <button class="action-button secondary" (click)="prevStep('isRegister')">
+                Previous step
+              </button>
+                <button class="btn" (click)="proceedtonext()">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+       
+    </div>
+
+    <!-- Onboarding product  details -->
+    <!-- <div class="setup-wrapper" [hidden]="!screen.productDetails">
+        <div class="info-section ">
+
+        </div>
+        <div class="form-section" [formGroup]="wasteDetailsForm">
+            <!-- Waste Category 
+            <div class="input-group">
+              <label class="input-label" for="waste-category">Waste category</label>
+              <input
+                type="text"
+                id="waste-category"
+                class="text-input"
+                formControlName="wasteCategory"
+                placeholder="Add category"
+              />
+              <div *ngIf="hasError('wasteCategory', 'required')" class="error-message">
+                Please add a waste category.
+              </div>
+            </div>
+          
+            <!-- Select Characteristics 
+            <div class="input-group">
+              <label class="input-label">Select the characteristics specific to the waste</label>
+              <div class="tag-container">
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Hazardous') }"
+                    (click)="toggleCharacteristic('Hazardous')"
+                >
+                    Hazardous
+                </button>
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Organic') }"
+                    (click)="toggleCharacteristic('Organic')"
+                >
+                    Organic
+                </button>
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Recyclable') }"
+                    (click)="toggleCharacteristic('Recyclable')"
+                >
+                    Recyclable
+                </button>
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Disposable') }"
+                    (click)="toggleCharacteristic('Disposable')"
+                >
+                    Disposable
+                </button>
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Plastic') }"
+                    (click)="toggleCharacteristic('Plastic')"
+                >
+                    Plastic
+                </button>
+                <button
+                    class="tag"
+                    [ngClass]="{ active: wasteDetailsForm.get('selectedCharacteristics')?.value.includes('Combustible') }"
+                    (click)="toggleCharacteristic('Combustible')"
+                >
+                    Combustible
+                </button>
+              </div>
+              <div *ngIf="hasError('selectedCharacteristics', 'required')" class="error-message">
+                Please select at least one characteristic.
+              </div>
+            </div>
+          
+            <!-- Add Specific Characteristics 
+            <div class="input-group">
+              <label class="input-label" for="specific-characteristics">Add any specific characteristics</label>
+              <div formArrayName="specificCharacteristics">
+                <div *ngFor="let characteristic of specificCharacteristicsArray.controls; let i = index" [formGroupName]="i">
+                  <input
+                    type="text"
+                    [id]="'specific-characteristic-' + i"
+                    class="text-input full-width"
+                    formControlName="description"
+                    placeholder="Add description"
+                  />
+                  <span
+                  class="delete-icon"
+                  (click)="removeCharacteristic(i)"
+                ></span>
+                </div>
+              </div>
+              <span
+                href="#"
+                style="display: block; margin-top: 5px; color:#111407; font-weight: 700; font-size: 16px; cursor: pointer;"
+                (click)="addCharacteristic()"
+                >+Add more</span
+              >
+            </div>
+          
+            <!-- Raw Materials 
+            <div class="input-group mt-5">
+              <label class="input-label" for="raw-materials">Raw materials used</label>
+              <select id="raw-materials" class="select-input" formControlName="rawMaterials">
+                <option value="">Select raw materials</option>
+                <option *ngFor="let material of rawMaterials" [value]="material">{{ material }}</option>
+              </select>
+              <div *ngIf="hasError('rawMaterials', 'required')" class="error-message">
+                Please select raw materials.
+              </div>
+            </div>
+          
+            <!-- Navigation Buttons 
+            <div class="button-group">
+              <button class="action-button secondary" (click)="prevStep('basicDetails')">
+                Previous step
+              </button>
+              <button class="action-button" (click)="activatescreen('isLogin')">
+                Proceed to next step
+              </button>
+          </div>                 
+    </div>
+    
+    <!-- Onboard upload documents 
+    <div class="upload-container" [hidden]="!screen.uploadDocument">
+        <div class="info-panel">
+          
+        </div>
+        <div class="upload-panel">
+            <div class="file-upload">
+                <label>MSME registration</label>
+                <div class="file-upload-box">
+                    <div class="p-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20ZM8 15.01L9.41 16.42L11 14.84V19H13V14.84L14.59 16.43L16 15.01L12.01 11L8 15.01Z" fill="#2196F3"/>
+                        </svg></div>
+                    <span style="color: #2196F3; text-decoration: underline;">Click to upload</span> or drag and drop<br>
+                    <small>PDF, PNG, JPG, or GIF (max. 3MB)</small>
+                </div>
+            </div>
+            <div class="file-upload">
+                <label>PCB licence</label>
+                <div class="file-upload-box">
+                    <div class="p-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20ZM8 15.01L9.41 16.42L11 14.84V19H13V14.84L14.59 16.43L16 15.01L12.01 11L8 15.01Z" fill="#2196F3"/>
+                        </svg></div>
+                        <span style="color: #2196F3; text-decoration: underline;">Click to upload</span> or drag and drop<br>
+                        <small>PDF, PNG, JPG, or GIF (max. 3MB)</small>
+                </div>
+            </div>
+            <div class="file-upload">
+                <label>ISO certificate</label>
+                <div class="file-upload-box">
+                    <div class="p-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20ZM8 15.01L9.41 16.42L11 14.84V19H13V14.84L14.59 16.43L16 15.01L12.01 11L8 15.01Z" fill="#2196F3"/>
+                        </svg></div>
+                        <span style="color: #2196F3; text-decoration: underline;">Click to upload</span> or drag and drop<br>
+                        <small>PDF, PNG, JPG, or GIF (max. 3MB)</small>
+                </div>
+            </div> -->
+            <!-- <div class="navigation-buttons">
+                <button class="prev-step" (click)="prevStep('productDetails')">Previous step</button>
+                <button class="next-step" (click)="activatescreen('isLogin')">Proceed to next step</button>
+            </div>
+        </div>
+    </div> -->
+
+

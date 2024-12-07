@@ -1,0 +1,9 @@
+<div class="layout-container">
+  <app-menu-bar [hidden]="page.isLogin"></app-menu-bar>
+  <div class="main-content" [ngClass]="{'main-content': !page.isLogin, 'login-content' : page.isLogin }">
+    <app-header [hidden]="page.isLogin"></app-header>
+    
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <app-notification-bar [hidden]="page.isLogin"></app-notification-bar> -->
+</div>

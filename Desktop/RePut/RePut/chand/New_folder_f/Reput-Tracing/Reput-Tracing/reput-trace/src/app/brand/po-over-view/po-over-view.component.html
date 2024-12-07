@@ -1,0 +1,122 @@
+<div class="main-wrap">
+  <div>
+    <div class="po-container">
+      <h2 class="po-heading">Available PO’s</h2>
+      <ul class="po-list">
+        <li
+          class="po-item"
+          [class.active]="i === activeIndex"
+          *ngFor="let po of poList; let i = index"
+          (click)="setActiveTab(i)"
+        >
+          <div class="po-number">{{ po.number }}</div>
+          <div class="po-invoices">{{ po.invoices }} invoices</div>
+          <div class="po-invoices"> Compliance <strong>{{ po.compliance }}%</strong></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-wrap">
+    <mat-tab-group *ngIf="activeIndex == 0" class="mat-underline" (selectedTabChange)="onTabChange()">
+      <mat-tab sty label="Supply chain map">
+        <app-po-tier-view #supplyChainView [dataChart]="chartData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Product component setup">
+        <app-po-tier-view #productComponentView [dataChart]="productComponentData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Process map">
+        <app-po-tier-view #processMapView [dataChart]="processData"></app-po-tier-view>  
+      </mat-tab>
+    </mat-tab-group>
+
+    <mat-tab-group *ngIf="activeIndex == 1" class="mat-underline" (selectedTabChange)="onTabChange()">
+      <mat-tab sty label="Supply chain map">
+        <app-po-tier-view #supplyChainView [dataChart]="chartData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Product component setup">
+        <app-po-tier-view #productComponentView [dataChart]="productComponentData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Process map">
+        <app-po-tier-view #processMapView [dataChart]="processData"></app-po-tier-view>  
+      </mat-tab>
+    </mat-tab-group>
+
+    <mat-tab-group *ngIf="activeIndex == 2" class="mat-underline" (selectedTabChange)="onTabChange()">
+      <mat-tab sty label="Supply chain map">
+        <app-po-tier-view #supplyChainView [dataChart]="chartData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Product component setup">
+        <app-po-tier-view #productComponentView [dataChart]="productComponentData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Process map">
+        <app-po-tier-view #processMapView [dataChart]="processData"></app-po-tier-view>  
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="main-wrap">
+  <div><div class="po-container">
+    <h2 class="po-heading">Available PO’s</h2>
+    <ul class="po-list">
+      <li class="po-item active">
+        <div class="po-number">PO #123S23FR</div>
+        <div class="po-invoices">12 invoices</div>
+      </li>
+      <li class="po-item">
+        <div class="po-number">PO #123S24XR</div>
+        <div class="po-invoices">23 invoices</div>
+      </li>
+      <li class="po-item">
+        <div class="po-number">PO #123SNIU</div>
+        <div class="po-invoices">43 invoices</div>
+      </li>
+      <li class="po-item">
+        <div class="po-number">PO #1227HEW</div>
+        <div class="po-invoices">78 invoices</div>
+      </li>
+      <li class="po-item">
+        <div class="po-number">PO #128DH78</div>
+        <div class="po-invoices">92 invoices</div>
+      </li>
+      <li class="po-item">
+        <div class="po-number">PO #345FFRF4</div>
+        <div class="po-invoices">34 invoices</div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div class="content-wrap">
+    <mat-tab-group class="mat-underline" (selectedTabChange)="onTabChange()">
+      <mat-tab sty label="Supply chain map">
+        <div class="zoom-level">
+          <mat-slider min="1" max="3" step="0.1" >
+            <input matSliderThumb value="1">
+          </mat-slider>
+        </div>
+      
+        <figure class="highcharts-figure">
+          <div id="organizationcontainer"></div>
+        </figure>
+        <app-po-tier-view #supplyChainView [dataChart]="chartData"></app-po-tier-view>
+
+      </mat-tab>
+      <mat-tab label="Product component setup">
+        <app-po-tier-view #productComponentView [dataChart]="productComponentData"></app-po-tier-view>
+      </mat-tab>
+      <mat-tab label="Process map">
+        <app-po-tier-view #processMapView [dataChart]="processData"></app-po-tier-view>  
+      </mat-tab>
+    </mat-tab-group>
+        
+  </div>
+</div> -->

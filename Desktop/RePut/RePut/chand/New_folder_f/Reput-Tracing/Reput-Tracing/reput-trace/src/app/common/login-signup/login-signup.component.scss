@@ -1,0 +1,692 @@
+
+/* Container Styles */
+.registercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px 150px;
+    background-image: url('../../../../public/onboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    
+
+}
+
+/* Left Section Styles */
+.left-section {
+    color: #FEFEFD;
+    max-width: 40%;
+    position: relative;
+    bottom: 18%;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+.left-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Right Section Styles */
+.right-section {
+    border: 1px solid;
+    
+    background-color: rgba(198, 198, 198, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 512px;
+    height: 700px;
+    width: 100%;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-container .logo {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    color: #FEFEFD;
+    font-size: 1.5em;
+    margin-bottom: -20px;
+    margin-top: 20px;
+
+}
+
+.form-container p {
+    color: #FEFEFD;
+    margin-bottom: 40px;
+    margin-top:10px;
+
+}
+
+
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-container a{
+    color: #FEFEFD;
+    text-decoration: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 8px;
+    background-color: #112B3B ;
+    color: #FEFEFD;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-container button:hover {
+    background-color: #004e61;
+}
+
+.form-container .agreement,
+.form-container .login {
+    color: #FEFEFD;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.form-container .agreement a,
+.form-container .login a {
+    text-decoration: none;
+    color: #FEFEFD;
+
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+.error-class{
+    color: #e14a4a !important;
+    text-align: left;
+    margin: 0 !important;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.success-message{
+    color: #4CAF50;
+    text-align: left;
+}
+
+/* Wrapper for password input and eye icon */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+.password-wrapper .eye-icon {
+    position: absolute;
+    top: 50%; /* Centers the icon vertically */
+    right: 10px; /* Aligns the icon towards the right */
+    transform: translateY(-50%); /* Ensures vertical alignment */
+    width: 20px; /* Adjusts the size of the icon */
+    height: 20px;
+    cursor: pointer; /* Makes the icon clickable */
+    background-size: cover; /* Ensures the image fully covers the span */
+    background-position: center; /* Centers the icon image */
+    background-repeat: no-repeat; /* Avoids image repetition */
+  }
+
+  .password-wrapper .error-class {
+    margin-top: 5px; /* Adjust as needed */
+}
+  
+  /* Default icon when the password is hidden */
+  .password-wrapper .eye-icon.lock {
+    background-image: url('../../../../public/pwd-lock.png'); /* Replace with the actual lock icon path */
+  }
+  
+  /* Icon when the password is visible */
+  .password-wrapper .eye-icon.unlock {
+    background-image: url('../../../../public/pwd-unlock.png'); /* Replace with the actual unlock icon path */
+  }
+
+.password-field{
+    position: relative;
+    width: 100%;
+}
+/* Eye icon styles */
+.password-field .eye-icon-password{
+    position: absolute;
+    top: 50%; /* Centers the icon vertically */
+    right: 10px; /* Aligns the icon towards the right */
+    transform: translateY(-50%); /* Ensures vertical alignment */
+    width: 20px; /* Adjusts the size of the icon */
+    height: 20px;
+    cursor: pointer; /* Makes the icon clickable */
+    background-size: cover; /* Ensures the image fully covers the span */
+    background-position: center; /* Centers the icon image */
+    background-repeat: no-repeat; /* Avoids image repetition */
+}
+
+.password-wrapper .confirm-password-field{
+    position: relative;
+    width: 100%;
+}
+
+.confirm-password-field .eye-icon-confirm-password {
+    position: absolute;
+    top: 50%; /* Centers the icon vertically */
+    right: 10px; /* Aligns the icon towards the right */
+    transform: translateY(-50%); /* Ensures vertical alignment */
+    width: 20px; /* Adjusts the size of the icon */
+    height: 20px;
+    cursor: pointer; /* Makes the icon clickable */
+    background-size: cover; /* Ensures the image fully covers the span */
+    background-position: center; /* Centers the icon image */
+    background-repeat: no-repeat; /* Avoids image repetition */
+}
+
+/* Default (password hidden) eye icon */
+.eye-icon-password.lock,
+.eye-icon-confirm-password.lock {
+  background-image: url('../../../../public/pwd-lock.png'); /* Replace with the lock icon path */
+}
+
+/* Active (password visible) eye icon */
+.eye-icon-password.unlock,
+.eye-icon-confirm-password.unlock {
+  background-image: url('../../../../public/pwd-unlock.png'); /* Replace with the unlock icon path */
+}
+
+
+.regbasiccontainer {
+    display: flex;
+    margin: 0 auto;
+    background-color: #F2F4EA;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 100vh;
+    padding: 10px;
+}
+.left-panel {
+    flex: 1;
+    // background-image: url('../../../../public/onboardstep1.jpg'); /* Old Image */
+    background-image: url('../../../../public/basic-details.png');
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat;
+    min-height: 90vh; /* Full viewport height */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-width:40vW;
+}
+
+
+.right-panel {
+    flex: 1;
+    padding: 100px;
+    background-color: white;
+    height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 20px;
+}
+.step {
+    margin-right: 20px;
+    opacity: 0.7;
+}
+.step.active {
+    opacity: 1;
+}
+.step-number {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: #166088;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 10px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 20px;
+}
+.illustration {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.company-size {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.company-s {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.size-option {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+.size-option:hover {
+    background-color: #e0e0e0;
+}
+
+.size-option.active {
+    background-color: #415169; /* Different color to indicate selection */
+    color: white;
+    font-weight: 500;
+}
+.btn {
+    background-color: #1B220C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.left-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.setup-wrapper {
+    display: flex;
+    padding: 40px;
+    background-color: #F2F4EA;
+    min-height: 100vh !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.info-section {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    background-image: url('../../../../public/onBoardProct.jpg');
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat;
+    min-height: 90vh; /* Full viewport height */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    min-width: 41vW
+}
+.form-section {
+    flex: 2;
+    background-color: white;
+    max-height: 90vh; /* Set a maximum height for the panel */
+    overflow-y: auto;  /* Enable vertical scrolling if content overflows */
+    padding: 100px; /* Add some padding for better visual spacing */
+    border: 1px solid #ddd; /* Optional: Add a border for better distinction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+.progress-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+.progress-step {
+    margin-right: 20px;
+    opacity: 0.7;
+}
+.progress-step.current {
+    opacity: 1;
+}
+.step-indicator {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: #166088;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 10px;
+}
+.step-completed {
+    background-color: #4CAF50;
+    color: white;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.section-subtitle {
+    margin-bottom: 20px;
+}
+.image-placeholder {
+    text-align: center;
+}
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+}
+.input-group {
+    display: block;
+    margin-bottom: 20px;
+}
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #686D5D;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+.text-input, .select-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px !important;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.text-input.full-width {
+  width: 100% !important; /* Full width for the Add description box */
+}
+.input-group div[formArrayName="specificCharacteristics"] {
+  margin-top: 10px; /* Ensure proper spacing between title and input */
+}
+.text-input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tag {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.tag:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+}
+  
+.tag.active {
+    background-color: #415169 !important;  /* Blue background for selected tags */
+    color: white !important;
+}
+
+.action-button {
+    background-color: #1B220C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.action-button.secondary {
+    background-color: white;
+    color: #333;
+}
+.action-button.secondary:hover {
+    background-color: #bbb;
+}
+
+.delete-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    margin-left: 10px;
+    background-image: url('../../../../public/delete.png'); /* Replace with your actual path */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    position: relative;
+    right: 10px;
+    top: -33px;
+    float: right;
+    display: block;
+  }
+  
+  .delete-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    opacity: 0.8; /* Slight transparency on hover */
+  }
+  
+
+.button-group {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 100px;
+}
+
+.upload-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #F2F4EA;
+    min-height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-panel {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    background-image: url('../../../../public/onBoardUploadDocument.jpg');
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat;
+    height: 90vh; /* Full viewport height */
+    min-width: 775px !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;    
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.progress-step {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #2d496b;
+}
+
+.progress-step.complete {
+    background-color: #f7f9f5;
+    color: #1c3b5f;
+}
+
+.progress-step.current {
+    background-color: #f1c40f;
+    color: #1c3b5f;
+}
+
+.illustration-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+}
+
+.upload-panel {
+    flex: 2;
+    padding: 40px;
+    background-color: white;
+    max-height: 90vh; /* Set a maximum height for the panel */
+    overflow-y: auto;  /* Enable vertical scrolling if content overflows */
+    padding: 16px; /* Add some padding for better visual spacing */
+    border: 1px solid #ddd; /* Optional: Add a border for better distinction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.file-upload {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.file-upload label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #686D5D;
+}
+
+.file-upload-box {
+    border: 2px dashed #DFDFDF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.file-upload-box:hover {
+    background-color: #f7f9f5;
+}
+
+.navigation-buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.prev-step {
+    background-color: white;
+    color: #333;
+}
+
+button.next-step {
+    background-color: #1B220C;
+    color: white;
+}
+
+/* CSS for the sliding effect */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide-enter {
+    transform: translateX(100%);
+  }
+  
+  .slide-enter-active {
+    transform: translateX(0);
+  }
+  
+  .slide-exit {
+    transform: translateX(0);
+  }
+  
+  .slide-exit-active {
+    transform: translateX(-100%);
+  }
+  
+  /* Initially hide slides */
+  .hidden {
+    display: none;
+  }
+  

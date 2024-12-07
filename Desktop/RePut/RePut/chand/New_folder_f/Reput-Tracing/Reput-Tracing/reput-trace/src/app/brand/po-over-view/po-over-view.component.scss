@@ -1,0 +1,83 @@
+.main-wrap{
+  display: flex;
+}
+
+.po-container {
+  width: 300px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+  margin: 10px;
+  border-radius: 8px;
+  min-height: 750px}
+
+.po-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111407;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
+
+}
+
+.po-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+
+}
+
+
+.po-item {
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Lato", sans-serif;
+  
+
+}
+
+.po-item.active, .po-item.active:hover{
+  background-color: #EAF0F4;
+  border-color: #b0d3e7;
+}
+
+.po-item:hover {
+  background-color: #f8f8f8;
+}
+
+.po-number {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1B220C;
+  }
+
+.po-invoices {
+  font-size: 14px;
+  color: #80807F;
+  font-weight: 400;
+
+}
+
+.po-item.active .po-number,
+.po-item.active .po-invoices {
+  color: #333;
+}
+
+.content-wrap{
+  background-color: #FFFFFF;
+  width:100%;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+#container h4 {
+  text-transform: none;
+  font-size: 14px !important;
+  font-weight: normal;
+}

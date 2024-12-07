@@ -1,0 +1,38 @@
+<div class="org-chart-container">
+    <div class="zoom-slider">
+      <input
+        type="range"
+        min="0.5"
+        max="2"
+        step="0.1"
+        [value]="zoomLevel"
+        (input)="onZoomChange($event)"
+      />
+    </div>
+    <div class="org-chart" [style.transform]="'scale(' + zoomLevel + ')'">
+      <svg #svgContainer class="connections-svg"></svg>
+      <div *ngFor="let tier of groupedByTier; let i = index" class="tier">
+        <h3 class="tier-title">Tier {{ tier.level }}</h3>
+        <div class="nodes-container">
+          <ng-container *ngFor="let node of tier.nodes">
+            <div class="node-wrapper" [attr.data-node-id]="node.id">
+              <div class="node" [ngClass]="{'missing-docs': !node.hasDocuments}">
+                <div class="node-content">
+                  <div class="node-header">
+                    <span>{{ node.name }}</span>
+                    <button class="menu-btn">⋮</button>
+                  </div>
+                  <div class="node-description">{{ node.description }}</div>
+                  <div class="document-status">
+                    <span *ngIf="node.hasDocuments" class="status-icon success"></span>
+                    <span *ngIf="!node.hasDocuments" class="status-icon error"></span>
+                    {{ node.hasDocuments ? 'Documents submitted' : 'Missing documents' }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>

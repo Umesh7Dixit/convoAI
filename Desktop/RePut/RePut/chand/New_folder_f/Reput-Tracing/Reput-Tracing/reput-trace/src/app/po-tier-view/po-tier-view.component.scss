@@ -1,0 +1,135 @@
+.org-chart-container {
+    position: relative;
+    overflow: auto;
+    overflow-y: hidden;
+  }
+
+  .zoom-slider {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 10;
+  }
+
+  .zoom-slider input[type="range"] {
+    width: 120px;
+  }
+
+  .org-chart {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transform-origin: top left;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .connections-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .tier {
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .tier-title {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .nodes-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+  }
+
+  .node-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .node {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 240px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .missing-docs {
+    background: #fff1f0;
+    border-color: #ffccc7;
+  }
+
+  .node-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .node-header span {
+    font-weight: bold;
+  }
+
+  .menu-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .node-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .document-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .status-icon {
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 50%;
+  }
+
+  .status-icon.success {
+        color: #52c41a;
+        background: #f6ffed;
+        background-image: url('../../../public/check_circle.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+  }
+
+  .status-icon.error {
+      color: #ff4d4f;
+      background: #fff1f0;
+      background-image: url('../../../public/Vector.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+  }
+
+  .nodes-container:first-child {
+    margin-left: 0;
+  }

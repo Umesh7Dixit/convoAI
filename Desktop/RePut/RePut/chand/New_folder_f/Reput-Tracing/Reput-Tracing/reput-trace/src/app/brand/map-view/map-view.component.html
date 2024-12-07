@@ -1,0 +1,87 @@
+<div class="map-view-container" hidden="true">
+    <div class="header">
+      <h2>Map view</h2>
+      <span>Last updated on: Aug 10, 2024, 12:09 AM</span>
+      <div class="view-switcher">
+        <button class="button1">Network view</button>
+        <button class="active button2">Map view</button>
+      </div>
+    </div>
+  
+    <div class="map-container">
+      <!-- You can embed a map using services like Google Maps, OpenStreetMap, or Mapbox -->
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html"
+        class="map-iframe"
+        frameborder="0"
+      ></iframe>
+  
+      <!-- Sample zoom controls -->
+      <div class="zoom-controls">
+        <button class="zoom-in">+</button>
+        <button class="zoom-out">-</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="map-view-container" >
+    <div class="header">
+      <h2>Map view</h2>
+      <span>Last updated on: {{finalDate}} </span>
+      <div class="view-switcher">
+        <button class="button2" [ngClass]="{'active': view.map }" (click)="activeview(true);">Map view</button>
+        <button class="button1" [ngClass]="{'active': view.network }" (click)="activeview(false);">Network view</button>
+      </div>
+    </div>
+    <div [hidden]="!view.map">
+      <div id="mapcontainer"></div>
+    </div>
+    <div [hidden]="!view.network">
+      <ul >
+        <li><div style="background-color: #C0C0C0;"></div>Country</li>
+        <li><div style="background-color: #d6c58d;"></div>Tier 1 Supplier</li>
+        <li><div style="background-color: #326496;"></div>Tier 2 Supplier</li>
+        <li><div style="background-color: #003366;"></div>Tier 3 Supplier</li>
+      </ul>
+      <div class="network-map-container" id="networkcontainer">
+       
+      </div>
+    </div>    
+  </div>
+
+  <div class="map-sidebar">
+    <!-- Statistics Grid -->
+    <div class="stats-grid">
+      <div class="stat-card" *ngFor="let stat of statistics">
+        <div class="value">{{stat.value}}</div>
+        <div class="label">{{stat.label}}</div>
+      </div>
+    </div>
+  
+    <!-- Tier Information -->
+    <div class="tier-card">
+      <h5>Tier information</h5>
+      <hr width="100%" size="2">
+      <div class="tier-list">
+        <div class="tier-item" *ngFor="let tier of tiers">
+          <span>Tier {{tier.tier}}:</span>
+          <span>{{tier.count}}</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Warning Alert -->
+    <div class="warning-card">
+      <div class="warning-content">
+        <span></span>
+        <div>
+          <div class="warning-title">Warning in {{selectedCountry}}</div>
+          <p class="warning-text">
+            {{selectedMessage}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
